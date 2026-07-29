@@ -74,11 +74,11 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1024px){.hero img{aspect-ratio:3/4}}
 @media(max-width:640px){.hero img{aspect-ratio:9/16}}
 
-/* ── action bar ── */
-.actionbar{border-bottom:1px solid var(--line);background:var(--white);padding:22px 0}
-.actionbar-inner{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+/* ── action bar — stacked, cannot overflow ── */
+.actionbar{border-bottom:1px solid var(--line);background:var(--white);padding:24px 0}
 .ca-box{
-  display:flex;align-items:center;gap:12px;flex:1;min-width:280px;
+  display:flex;align-items:center;gap:12px;
+  width:100%;max-width:680px;margin:0 auto 14px;
   background:var(--mist);border:1px solid var(--line);border-radius:12px;
   padding:11px 13px;
 }
@@ -96,7 +96,7 @@ a{color:inherit;text-decoration:none}
   border-radius:7px;padding:6px 12px;cursor:pointer;transition:background .2s;flex-shrink:0;
 }
 .ca-copy:hover{background:var(--mist-2)}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 
 /* ── marquee ── */
 .marquee{
@@ -186,11 +186,15 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.01em;line-hei
 /* ── steps ── */
 .steps{list-style:none;display:grid;gap:14px}
 .step{
-  display:flex;gap:18px;align-items:flex-start;
-  background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px;
   transition:transform .2s,box-shadow .2s;
 }
 .step:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(14,31,64,.08)}
+.step-art{
+  width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;
+  border:1px solid var(--line);margin-bottom:14px;
+}
+.step-body{display:flex;gap:14px;align-items:flex-start}
 .step-no{
   font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.14em;
   color:var(--blue);border:1px solid var(--line);
@@ -250,8 +254,6 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.01em;line-hei
   .brand-mark{width:30px;height:30px;font-size:14px}
   .wrap{padding:0 18px}
   .actionbar{padding:16px 0}
-  .actionbar-inner{flex-direction:column;align-items:stretch;gap:12px}
-  .ca-box{min-width:0}
   .actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
   .actions .btn-buy{grid-column:1/-1}
   .actions .btn{padding:13px 8px;font-size:12.5px}
