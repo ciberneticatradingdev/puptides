@@ -1,12 +1,13 @@
 # PUPTIDES — $PUPTIDES
 
-Memecoin site. Advanced peptide science. For dogs. On Solana. Science. Strength. Woof.
+Memecoin site. Research. Develop. Transform. Advanced peptide science, for dogs, on Solana.
 
-Funny lab-clinic style: jacked shiba lab director, 4 fake peptide compounds (BPC-157, TB-500,
-CJC-1295, IGF-1) + $PUPTIDES (pure hopium), clinical trials (n=1, p<woof), Certificate of
-Analysis as tokenomics, dosing protocol as how-to-buy.
+Premium white lab style, short one-pager: responsive hero art, CA action bar, marquee,
+5 compound cards (BPC-157, TB-500, CJC-1295, IGF-1 + $PUPTIDES "pure hopium"),
+Certificate of Analysis as tokenomics, RX dosing protocol as how-to-buy.
 
-Static site — no build step, no dependencies.
+**LIVE:** https://puptides.vercel.app
+GitHub: `ciberneticatradingdev/puptides` → connected to Vercel, push to `main` auto-deploys.
 
 ## Run locally
 
@@ -18,17 +19,20 @@ node serve.js
 
 ## Launch checklist
 
-- [ ] Set `CA` in `js/main.js` (auto-wires pump.fun buy + dexscreener chart links + copy button)
-- [ ] X + Telegram links in hero (`index.html`, currently `#`)
-- [ ] Deploy to Vercel: `vercel --prod`
+- [ ] Set `CA` in `js/main.js` (auto-wires pump.fun buy buttons + dexscreener chart + copy)
+- [ ] X + Telegram links in the action bar (`index.html`, currently `#`)
+- [ ] Replace `assets/img/hero-tablet.jpg` (3:4 art) and `assets/img/hero-mobile.jpg`
+      (9:16 art) — both are currently copies of the desktop art. Same filenames, push, done.
 
-## Assets
+## Hero art
 
-- `assets/img/banner.jpg` — wide product-line banner (hero band + og:image)
-- `assets/img/doge-lab.jpg` — Dr. Doge with syringe (hero + clinical trials)
+`<picture>` in `index.html` picks by viewport:
 
-Pending: 2 more art pieces exist (shaker doge "Science doesn't lie. Results do.",
-vials-only square poster) — not yet saved to disk. Drop them in `assets/img/` to use.
+| File | Breakpoint | Status |
+|---|---|---|
+| `assets/img/hero-desktop.jpg` | > 1024px | real art ✓ |
+| `assets/img/hero-tablet.jpg` | ≤ 1024px | placeholder (desktop copy) |
+| `assets/img/hero-mobile.jpg` | ≤ 640px | placeholder (desktop copy) |
 
 ## Nota
 
