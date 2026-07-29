@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" width="600" height="660" role="img" aria-label="Placeholder: muscular Shiba Inu in a white lab coat holding a PUPTIDES syringe">
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#F0D3A0"/><stop offset=".55" stop-color="#E2BB79"/><stop offset="1" stop-color="#CFA25C"/>
+    </linearGradient>
+    <linearGradient id="furDk" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#DDB374"/><stop offset="1" stop-color="#C0934F"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2=".35" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#F6FAFD"/><stop offset="1" stop-color="#E6EFF7"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset=".5" stop-color="#E6F0F8" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#C8D9E8" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="serum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FD3E6"/><stop offset="1" stop-color="#0E7BE0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══ LEGS ══ -->
+  <g stroke="#B08A4E" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M262 470c-6 46-14 88-16 124-1 22 8 34 22 34s22-12 22-32c0-34-2-78-2-126z" fill="url(#furDk)"/>
+    <path d="M338 470c6 46 14 88 16 124 1 22-8 34-22 34s-22-12-22-32c0-34 2-78 2-126z" fill="url(#furDk)"/>
+  </g>
+
+  <!-- ══ RIGHT ARM (viewer right, hanging) ══ -->
+  <g stroke="#B08A4E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M424 236c34 10 54 38 60 82 6 46 4 100-4 146-5 28-17 44-34 44-16 0-26-14-24-36 5-48 8-94 4-132-3-32-14-56-30-68z" fill="url(#furDk)"/>
+    <path d="M447 486c19-4 35 7 39 26 4 20-7 35-25 37-17 2-31-9-33-27-2-17 5-32 19-36z" fill="url(#fur)"/>
+    <path d="M457 526v15M470 524v14M482 518v13" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- ══ TORSO ══ -->
+  <path d="M300 198c60 0 108 14 132 42 20 24 24 58 20 96-4 50-16 92-28 124-10 26-24 36-48 40-24 4-50 6-76 6s-52-2-76-6c-24-4-38-14-48-40-12-32-24-74-28-124-4-38 0-72 20-96 24-28 72-42 132-42z"
+        fill="url(#fur)" stroke="#B08A4E" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- pecs -->
+  <g fill="none" stroke="#B08A4E" stroke-width="3" opacity=".7">
+    <path d="M296 254c-30 2-50 12-58 28-6 14-1 27 15 32 20 7 36 5 44-7 7-11 6-31-1-53z"/>
+    <path d="M304 254c30 2 50 12 58 28 6 14 1 27-15 32-20 7-36 5-44-7-7-11-6-31 1-53z"/>
+  </g>
+  <!-- abs -->
+  <g fill="none" stroke="#B08A4E" stroke-width="2.6" opacity=".62">
+    <path d="M300 330v128"/>
+    <path d="M266 356c22 5 46 5 68 0"/>
+    <path d="M270 394c20 5 40 5 60 0"/>
+    <path d="M276 430c16 4 32 4 48 0"/>
+  </g>
+
+  <!-- ══ LAB COAT ══ -->
+  <g stroke="#B9CEE0" stroke-width="2.5" stroke-linejoin="round">
+    <!-- left panel -->
+    <path d="M162 226c-14 96-12 214 6 300l72-6c-12-88-12-180-4-258z" fill="url(#coat)"/>
+    <!-- right panel -->
+    <path d="M438 226c14 96 12 214-6 300l-72-6c12-88 12-180 4-258z" fill="url(#coat)"/>
+    <!-- lapels -->
+    <path d="M162 226l74 36-16 26-64-40z" fill="#EAF2F9"/>
+    <path d="M438 226l-74 36 16 26 64-40z" fill="#EAF2F9"/>
+    <!-- collar -->
+    <path d="M258 208l-96 18 34 20 56-18z" fill="#F4F9FD"/>
+    <path d="M342 208l96 18-34 20-56-18z" fill="#F4F9FD"/>
+  </g>
+  <!-- pocket + brand -->
+  <g stroke="#C6D9E8" stroke-width="2" fill="none">
+    <path d="M378 400h44v34h-44z"/>
+  </g>
+  <text x="400" y="470" text-anchor="middle" font-family="'JetBrains Mono',monospace"
+        font-size="15" font-weight="700" fill="#0D141C" letter-spacing="1">PUPTIDES</text>
+  <!-- coat folds -->
+  <g stroke="#D3E2EE" stroke-width="2" fill="none" opacity=".9">
+    <path d="M188 300c-4 60-3 132 5 190M412 300c4 60 3 132-5 190"/>
+  </g>
+
+  <!-- ══ LEFT ARM (viewer left, raised) ══ -->
+  <g stroke="#B08A4E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- upper arm -->
+    <path d="M176 236c-32 12-50 40-56 84-4 34-2 66 4 92 5 20 18 28 32 24 14-4 20-18 15-38-7-26-10-52-8-74 3-32 10-58 24-72z" fill="url(#furDk)"/>
+    <!-- forearm rising -->
+    <path d="M120 352c-4-34 4-64 20-82 14-16 32-20 43-9 11 11 8 27-5 39-16 15-28 32-33 54z" fill="url(#fur)"/>
+    <!-- fist -->
+    <path d="M150 268c-6-26 8-44 32-46 24-2 40 14 40 38 0 24-16 39-38 39-20 0-31-13-34-31z" fill="url(#fur)"/>
+    <g stroke-width="2" fill="none" opacity=".7">
+      <path d="M162 252c15-4 32-4 47 2M164 272c15-4 32-4 47 2M168 292c13-3 28-3 41 1"/>
+    </g>
+  </g>
+
+  <!-- ══ SYRINGE ══ -->
+  <g transform="rotate(-7 186 190)">
+    <path d="M186 44V26" stroke="#8CA0B2" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M177 58h18V44h-18z" fill="#12BCD4" stroke="#0E93A6" stroke-width="2"/>
+    <rect x="168" y="58" width="36" height="126" rx="5" fill="url(#glass)" stroke="#8CA0B2" stroke-width="2.5"/>
+    <rect x="172" y="96" width="28" height="84" rx="2" fill="url(#serum)"/>
+    <g stroke="#7E93A5" stroke-width="1.6" opacity=".85">
+      <path d="M168 78h9M168 94h9M168 110h9M168 126h9M168 142h9M168 158h9M168 174h9"/>
+    </g>
+    <rect x="177" y="182" width="18" height="48" rx="2" fill="#E4ECF3" stroke="#8CA0B2" stroke-width="2"/>
+    <rect x="158" y="226" width="56" height="12" rx="6" fill="#E4ECF3" stroke="#8CA0B2" stroke-width="2"/>
+    <rect x="156" y="178" width="60" height="10" rx="5" fill="#E4ECF3" stroke="#8CA0B2" stroke-width="2"/>
+    <text x="186" y="148" transform="rotate(-90 186 148)" text-anchor="middle"
+          font-family="'JetBrains Mono',monospace" font-size="15" font-weight="700"
+          fill="#FFFFFF" letter-spacing="1.5">PUPTIDES</text>
+  </g>
+
+  <!-- ══ HEAD ══ -->
+  <g stroke="#B08A4E" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M242 108c-6-28-4-52 4-60s26-2 39 15z" fill="url(#furDk)"/>
+    <path d="M358 108c6-28 4-52-4-60s-26-2-39 15z" fill="url(#furDk)"/>
+    <path d="M300 42c43 0 71 24 77 62 7 37-4 67-25 84-17 13-34 19-52 19s-35-6-52-19c-21-17-32-47-25-84 6-38 34-62 77-62z" fill="url(#fur)"/>
+    <path d="M228 128c-9 15-11 33-4 48 9-9 15-17 17-28z" fill="url(#furDk)"/>
+    <path d="M372 128c9 15 11 33 4 48-9-9-15-17-17-28z" fill="url(#furDk)"/>
+    <path d="M300 128c24 0 39 13 39 30s-17 30-39 30-39-13-39-30 15-30 39-30z" fill="#FCF4E2"/>
+  </g>
+  <ellipse cx="270" cy="96" rx="16" ry="11" fill="#FCF4E2" opacity=".9"/>
+  <ellipse cx="330" cy="96" rx="16" ry="11" fill="#FCF4E2" opacity=".9"/>
+  <ellipse cx="272" cy="104" rx="8" ry="9.5" fill="#241B12"/>
+  <ellipse cx="328" cy="104" rx="8" ry="9.5" fill="#241B12"/>
+  <circle cx="275" cy="100" r="2.6" fill="#fff"/>
+  <circle cx="331" cy="100" r="2.6" fill="#fff"/>
+  <path d="M300 136c10 0 16 5 16 12s-7 11-16 11-16-4-16-11 6-12 16-12z" fill="#241B12"/>
+  <g fill="none" stroke="#241B12" stroke-width="3.2" stroke-linecap="round">
+    <path d="M300 159v10M300 169c-10 10-24 9-30-2M300 169c10 10 24 9 30-2"/>
+  </g>
+
+</svg>
