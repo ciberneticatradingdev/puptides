@@ -192,9 +192,13 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.01em;line-hei
 .step:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(14,31,64,.08)}
 .step-art{
   width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;
-  border:1px solid var(--line);margin-bottom:14px;
+  border:1px solid var(--line);display:block;
 }
 .step-body{display:flex;gap:14px;align-items:flex-start}
+.step-art + .step-body{margin-top:14px}
+/* the RX art has the step text baked in — card text is the fallback */
+.step.has-art .step-body{display:none}
+.step.has-art{padding:10px}
 .step-no{
   font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.14em;
   color:var(--blue);border:1px solid var(--line);
