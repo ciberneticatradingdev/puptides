@@ -157,6 +157,10 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.01em;line-hei
   border-color:#9cc4ec;
   box-shadow:0 8px 28px rgba(13,91,181,.10);
 }
+/* tier art has the card text baked in — card text is the fallback */
+.compound-art{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;display:block}
+.compound.has-art{padding:10px}
+.compound.has-art > :not(.compound-art){display:none}
 
 /* ── COA + protocol duo ── */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
