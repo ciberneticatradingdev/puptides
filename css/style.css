@@ -67,8 +67,12 @@ a{color:inherit;text-decoration:none}
 .btn-ghost:hover{background:var(--mist)}
 .btn-sm{padding:9px 15px;font-size:12px}
 
-/* ── hero ── */
-.hero img{width:100%;cursor:pointer}
+/* ── hero ──
+   Aspect per breakpoint matches the art: desktop 16:9, tablet 3:4, mobile 9:16.
+   While tablet/mobile files are desktop copies, object-fit crops them to shape. */
+.hero img{width:100%;cursor:pointer;object-fit:cover;object-position:62% center}
+@media(max-width:1024px){.hero img{aspect-ratio:3/4}}
+@media(max-width:640px){.hero img{aspect-ratio:9/16}}
 
 /* ── action bar ── */
 .actionbar{border-bottom:1px solid var(--line);background:var(--white);padding:22px 0}
@@ -240,11 +244,27 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.01em;line-hei
 }
 @media(max-width:760px){
   .nav-links{display:none}
-  .nav-inner{gap:14px}
-  .nav-inner .btn{margin-left:auto}
-  .actionbar-inner{flex-direction:column;align-items:stretch}
-  .actions{justify-content:center}
-  .section{padding:60px 0}
-  .coa-card{padding:24px 18px}
+  .nav-inner{gap:10px;padding:11px 16px}
+  .nav-inner .btn{margin-left:auto;padding:9px 13px;font-size:11px}
+  .brand{font-size:15px;letter-spacing:.1em}
+  .brand-mark{width:30px;height:30px;font-size:14px}
+  .wrap{padding:0 18px}
+  .actionbar{padding:16px 0}
+  .actionbar-inner{flex-direction:column;align-items:stretch;gap:12px}
+  .ca-box{min-width:0}
+  .actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .actions .btn-buy{grid-column:1/-1}
+  .actions .btn{padding:13px 8px;font-size:12.5px}
+  .marquee-track{font-size:10.5px}
+  .section{padding:56px 0}
+  .sec-head{margin-bottom:36px}
+  .sub{font-size:14.5px}
+  .compound p{min-height:0}
+  .coa-card{padding:22px 16px}
+  .coa-table{font-size:12.5px}
   .coa-table td:first-child{width:auto}
+  .coa-stamp{flex-direction:column;align-items:flex-start;gap:10px}
+  .step{padding:15px 15px;gap:13px}
+  .foot-top{flex-direction:column;align-items:flex-start;gap:14px}
+  .foot-bottom{flex-direction:column;gap:6px}
 }
