@@ -1,7 +1,7 @@
 /* ═══ PUPTIDES — premium white lab ═══ */
 
 /* Contract address — update at launch */
-const CA = null; // e.g. "So1anaAddressHere...pump"
+const CA = 'CrL92PP6U1WEij73HNd8YVbHYH8K7qeVtSidyUmapump';
 
 /* CA box + buy/chart buttons */
 const caText = document.getElementById('caText');
